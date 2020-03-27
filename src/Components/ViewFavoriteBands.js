@@ -21,11 +21,15 @@ class ViewFavoriteBands extends Component {
             })
     }
 
+    updateAllBands = newArr => {
+        this.setState({allBands: newArr})
+    }
+
     render() {
         console.log(this.state.allBands)
         let mappedBands = this.state.allBands.map((val, index) => {
             return (
-                <Places val={val} />
+                <Places val={val} updateAllBands={this.updateAllBands}/>
             )
         })
         return (

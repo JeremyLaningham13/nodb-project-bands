@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 
 //Components here
@@ -15,17 +14,25 @@ class App extends React.Component {
   }
 
   render() {
-
   return (
     <div className="App">
-      <h1>Favorite Bands</h1>
-      <div>
-        <button onClick={() => this.state({currentView: 'post'})} >Post Page</button>
-        <button onClick={()=> this.state({currentView: 'bands'})} >Band Page</button>
-      </div>
+      <h1 class='title'>Favorite Bands</h1>
+      <nav>
+        <button onClick={() => this.setState({currentView: 'post'})} >Post Page</button>
+        <button onClick={()=> this.setState({currentView: 'bands'})} >Band Page</button>
+      </nav>
+    {
+      this.state.currentView === 'post'
+      ?
       <PostFavoriteBands />
+      :
+      this.state.currentView === 'bands'
+      ?
       <ViewFavoriteBands />
-    </div>
+      :
+      null
+    }
+     </div>
   );
 }
 }

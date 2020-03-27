@@ -1,0 +1,13 @@
+body {
+   background-color: rgb(73, 72, 72);
+}
+
+.title {
+    color: whitesmoke;
+    border: 3px solid black;
+    width: auto;
+    text-align: center;
+    padding-top: auto;
+    height: fit-content;
+    margin-top: auto;
+}

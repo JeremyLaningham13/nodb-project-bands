@@ -1,11 +1,13 @@
-let favoriteBands = [{
+let favoriteBands = [
+    {
     id: 5,
-    img: '',
+    img: 'https://i.ytimg.com/vi/oY7aPoMSjrI/hqdefault.jpg',
     name: 'anberlin',
     album: 'Never Take Friendship Personal',
     song: 'Paperthin Hymn',
     venue: 'The Door, Warped Tour, House of Blues',
-}]
+}
+]
 
 let id = 1;
 
@@ -13,30 +15,30 @@ const getBands = (req, res) => {
     res.status(200).json(favoriteBands)
 }
 
-const postBands = (req, res) => {
+const postBand = (req, res) => {
     const {img, name, album, song, venue} = req.body
 
-    const bands = {
-        id,
-        img,
-        name,
-        album,
-        song,
-        venue
+    const band = {
+        id: id,
+        img: img,
+        name: name,
+        album: album,
+        song: song,
+        venue: venue
     }
 
-    favoriteBands.push(bands)
+    favoriteBands.push(band)
 
     id++
 
     res.status(200).json(favoriteBands)
 }
 
-const updateBands = (req, res) => {
+const updateBand = (req, res) => {
     const id = req.params.id
     const {img, name, album, song, venue} = req.body
 
-    const targetIndex = favoriteBands.findIndex(band => band.id === +id)
+    const targetIndex = favoriteBands.findIndex(bands => bands.id === +id)
 
     favoriteBands[targetIndex].img = img || favoriteBands[targetIndex].img
     favoriteBands[targetIndex].name = name || favoriteBands[targetIndex].name
@@ -47,10 +49,10 @@ const updateBands = (req, res) => {
     res.status(200).json(favoriteBands)
 }
 
-const removeBands = (req, res) => {
+const removeBand = (req, res) => {
     const {id} = req.params
     for(let i = 0; i < favoriteBands.length; i++) {
-        if(favoriteBands[i].id === id) {
+        if(favoriteBands[i].id == id) {
             favoriteBands.splice(i, 1)
         }
     }
@@ -59,7 +61,7 @@ const removeBands = (req, res) => {
 
 module.exports = {
     getBands,
-    postBands,
-    updateBands,
-    removeBands
+    postBand,
+    updateBand,
+    removeBand
 }

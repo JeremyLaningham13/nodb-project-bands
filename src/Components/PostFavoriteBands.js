@@ -17,7 +17,7 @@ class PostFavoriteBands extends Component {
         this.setState({[e.target.name]: e.target.value})
     }
 
-    handleClick = e => {
+    handleClick = () => {
         const {img, name, album, song, venue} = this.state;
         axios.post('/api/bands', {
             img,
@@ -27,6 +27,13 @@ class PostFavoriteBands extends Component {
             venue
         }).then(response => {
             console.log(response)
+            this.setState({
+                img: '',
+                name: '',
+                album: '',
+                song: '',
+                venue: ''
+            })
         }).catch(error => {
             console.log(error)
         })
@@ -34,14 +41,16 @@ class PostFavoriteBands extends Component {
 
     render() {
         //console.log(this.state)
+        const {img, name, album, song, venue} = this.state;
         return (
             <div>
                 <h1>Post Your Favorite Bands</h1>
-                <input type="text" placeholder="Img" onChange={this.handleChange} name='img'/>
-                <input type="text" placeholder="Band Name" onChange={this.handleChange} name='band name'/>
-                <input type="text" placeholder="Favorite Album" onChange={this.handleChange} name='favorite album'/>
-                <input type="text" placeholder="Favorite Song" onChange={this.handleChange} name='favorite song'/>
-                <input type="text" placeholder="Venue" onChange={this.handleChange} name='venue'/>
+                <input type="text" placeholder="Img" onChange={this.handleChange} name='img' value={img}/>
+                {/* <img src={img} alt="image"/> */}
+                <input type="text" placeholder="Name" onChange={this.handleChange} name='name' value={name}/>
+                <input type="text" placeholder="Album" onChange={this.handleChange} name='album' value={album}/>
+                <input type="text" placeholder="Song" onChange={this.handleChange} name='song' value={song}/>
+                <input type="text" placeholder="Venue" onChange={this.handleChange} name='venue' value={venue}/>
                 <button onClick={this.handleClick} >Add Favorite Band</button>
             </div>
         )

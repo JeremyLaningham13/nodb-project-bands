@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import './Places.css'
 
 class Places extends Component {
     constructor() {
@@ -51,27 +52,29 @@ class Places extends Component {
     console.log(this.state)
     return (
       <div>
-        <img src={this.props.val.img} alt="image" />
-        <h2>{this.props.val.name}</h2>
-        <p>{this.props.val.album}</p>
-        <p>{this.props.val.song}</p>
-        <p>{this.props.val.venue}</p>
-        <button onClick={this.changeEditStatus}>Edit</button>
+          <nav class='list'>
+            <img src={this.props.val.img} alt="image" />
+            <h2>{this.props.val.name}</h2>
+            <p>{this.props.val.album}</p>
+            <p>{this.props.val.song}</p>
+            <p>{this.props.val.venue}</p>
+            <button class='button3' onClick={this.changeEditStatus} >Edit</button>
         {
-            this.state.editStatus === true
-            ?
-            <section>
-                <input type ="text" placeholder='Image' name='img' onChange={this.handleChange} />
-                <input type ="text" placeholder='Name' name='name' onChange={this.handleChange}/>
-                <input type ="text" placeholder='Album' name='album' onChange={this.handleChange}/>
-                <input type ="text" placeholder='Song' name='song' onChange={this.handleChange}/>
+                this.state.editStatus === true
+                ?
+            <section class='edit1'>
+                <input type ="text" placeholder='Image' name='img' onChange={this.handleChange}/>
+                <input type ="text" placeholder='Band Name' name='name' onChange={this.handleChange}/>
+                <input type ="text" placeholder='Favorite Album' name='album' onChange={this.handleChange}/>
+                <input type ="text" placeholder='Top Songs' name='song' onChange={this.handleChange}/>
                 <input type ="text" placeholder='Venue' name='venue' onChange={this.handleChange}/>
-                <button onClick={this.updateBand}>Update</button>
+                <button class='button3' onClick={this.updateBand}>Update</button>
             </section>
-            :
-            null
+                :
+                null
         }
-        <button onClick={this.deleteBand}>Delete</button>
+                <button class='button3' onClick={this.deleteBand}>Delete</button>
+            </nav>
       </div>
     )
   }

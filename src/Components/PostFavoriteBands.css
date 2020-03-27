@@ -1,0 +1,45 @@
+.title2 {
+    margin-left: 25%;
+}
+
+.inputGrp .tab {
+    background-color: rgb(159,159,159);
+    border: none;
+    color: whitesmoke;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: none;
+    outline: none;
+    margin-left: 25%;
+}
+
+::placeholder {
+    color: rgb(30,30,30);
+    font-size: large;
+}
+
+.addBandButton {
+    background-color: rgb(30,30,30);
+    border: 1px solid black;
+    color: rgb(159,159,159);
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: none;
+    outline: none;
+    margin-left: 25%;
+    text-transform: capitalize;
+}
+
+.addBandButton:hover {
+    background-color: rgb(18,18,18);
+}

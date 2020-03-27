@@ -16,11 +16,13 @@ class App extends React.Component {
   render() {
   return (
     <div className="App">
-      <h1 class='title'>Favorite Bands</h1>
-      <nav>
-        <button onClick={() => this.setState({currentView: 'post'})} >Post Page</button>
-        <button onClick={()=> this.setState({currentView: 'bands'})} >Band Page</button>
-      </nav>
+      <div className='background'>
+      <h1 className='title'> favoritebands.fm</h1>
+      </div>
+        <nav className='btn-group'>
+          <button class='button' onClick={() => this.setState({currentView: 'post'})} > Post Page</button>
+          <button class='button' onClick={()=> this.setState({currentView: 'bands'})} >Band Page</button>
+        </nav>
     {
       this.state.currentView === 'post'
       ?

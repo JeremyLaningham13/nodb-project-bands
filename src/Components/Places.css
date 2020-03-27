@@ -1,0 +1,29 @@
+.list {
+    margin-left: 37%;
+}
+
+.button3 {
+    margin-bottom: 25px;
+    background-color: rgb(159,159,159);
+    border: 1px solid black;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    float: none;
+    outline: none;
+    /* margin-left: .%; */
+    width: 5%;
+}
+
+.edit1 input::placeholder {
+    color: rgb(30,30,30);
+    font-size: small;
+    text-align: start ;
+}
+
+.bandPageTitle {
+    margin-left: 50px;
+}

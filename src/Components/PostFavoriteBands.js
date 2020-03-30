@@ -52,7 +52,7 @@ class PostFavoriteBands extends Component {
                 <input class='tab' type="text" placeholder="Top Songs" onChange={this.handleChange} name='song' value={song}/>
                 <input class='tab' type="text" placeholder="Venue" onChange={this.handleChange} name='venue' value={venue}/>
                 </nav>
-                <button class='addBandButton' onClick={this.handleClick} >Add Favorite Band</button>
+                <button class='addBandButton' onClick={this.handleClick} >Add Favorite Ban</button>
             </div>
         )
     }

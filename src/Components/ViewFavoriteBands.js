@@ -34,7 +34,7 @@ class ViewFavoriteBands extends Component {
         })
         return (
             <div>
-                <h1 class='bandPageTitle'>My Bands</h1>
+                <h1 class='bandPageTitle'>My Favorite Bands</h1>
                 {mappedBands}
         
             </div>

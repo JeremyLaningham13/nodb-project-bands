@@ -41,7 +41,6 @@ class PostFavoriteBands extends Component {
     }
 
     render() {
-        //console.log(this.state)
         const {img, name, album, song, venue} = this.state;
         return (
             <div>

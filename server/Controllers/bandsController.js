@@ -29,7 +29,7 @@ let favoriteBands = [
     name:"Thirty Seconds to Mars",
     album:"This Is War",
     song: "The Kill, From Yesterday, Closer to the Edge",
-    venue: "Ridglea Theater, Nokia Theater, House of Blues, Gexa"
+    venue: "Ridglea Theater, Nokia Theater, House of Blues, Gexa Theater"
   },
 ];
 

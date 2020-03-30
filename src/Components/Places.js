@@ -28,7 +28,9 @@ class Places extends Component {
         axios.put(`/api/bands/${this.props.val.id}`, {img, name, album, song, venue})
         .then(response => {
             console.log(response)
-            this.setState({editStatue: !this.state.editStatus})
+            this.setState({editStatus: !this.state.editStatus})
+            this.props.updateAllBands(response.data)
+            this.setState({addStatus: !this.state.addStatus})
             this.props.updateAllBands(response.data)
         })
         .catch(error => {
@@ -59,9 +61,10 @@ class Places extends Component {
             <p>{this.props.val.song}</p>
             <p>{this.props.val.venue}</p>
             <button class='button3' onClick={this.changeEditStatus} >Edit</button>
+            <button class='button3' onClick={this.deleteBand}>Delete</button>
         {
-                this.state.editStatus === true
-                ?
+            this.state.editStatus === true
+            ?
             <section class='edit1'>
                 <input type ="text" placeholder='Image' name='img' onChange={this.handleChange}/>
                 <input type ="text" placeholder='Band Name' name='name' onChange={this.handleChange}/>
@@ -73,7 +76,7 @@ class Places extends Component {
                 :
                 null
         }
-                <button class='button3' onClick={this.deleteBand}>Delete</button>
+                
             </nav>
       </div>
     )

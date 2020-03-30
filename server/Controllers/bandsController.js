@@ -1,7 +1,7 @@
 let favoriteBands = [
   {
     id: 5,
-    img: "https://i.ytimg.com/vi/oY7aPoMSjrI/hqdefault.jpg",
+    img: "https://thumbs.gfycat.com/MiserableAjarAfricanwilddog-size_restricted.gif",
     name: "anberlin",
     album: "Never Take Friendship Personal",
     song: "Paperthin Hymn, Impossible, I'd Like to Die",
@@ -9,7 +9,7 @@ let favoriteBands = [
   },
   {
     id: 6,
-    img: "https://www.spirit-of-metal.com/les%20goupes/B/Bilmuri/pics/3efe_3.jpg",
+    img: "https://66.media.tumblr.com/98ed15093a7cae7c8874b064f288cafc/tumblr_peydccxflc1rvqdnso3_500.gifv",
     name: "Bilmuri",
     album: "Frame",
     song: "Timing",
@@ -17,12 +17,20 @@ let favoriteBands = [
   },
   {
     id: 7,
-    img: "https://i.pinimg.com/736x/04/4e/55/044e55f9aa2e22e4f8f2fca4cf1aeb38--story-of-the-year-music-is-life.jpg",
+    img: "https://thumbs.gfycat.com/HugeDarlingCassowary-size_restricted.gif",
     name: "Story of the Year",
     album: "Wolves",
     song: "Miracle",
     venue: "Verizon Theater"
-  }
+  },
+  {
+    id: 8,
+    img:"https://media3.giphy.com/media/maNLc0ABKO4pO/source.gif",
+    name:"Thirty Seconds to Mars",
+    album:"This Is War",
+    song: "The Kill, From Yesterday, Closer to the Edge",
+    venue: "Ridglea Theater, Nokia Theater, House of Blues, Gexa"
+  },
 ];
 
 let id = 1;

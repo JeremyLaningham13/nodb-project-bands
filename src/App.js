@@ -1,24 +1,24 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 //Components here
-import PostFavoriteBands from './Components/PostFavoriteBands'
-import ViewFavoriteBands from './Components/ViewFavoriteBands'
+import PostFavoriteBands from "./Components/PostFavoriteBands";
+import ViewFavoriteBands from "./Components/ViewFavoriteBands";
 
 class App extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      currentView: ''
-    }
+      currentView: ""
+    };
   }
 
   render() {
-  return (
-    <div className="App">
-      <div className='background'>
-      <h1 className='title'> favoritebands.fm</h1>
-      </div>
+    return (
+      <div className="app">
+          <div className="bg-image">
+             <h1 className="bg-text">favoritebands.fm</h1>
+          </div>
         <nav className='btn-group'>
           <button class='button' onClick={() => this.setState({currentView: 'post'})} > Post Page</button>
           <button class='button' onClick={()=> this.setState({currentView: 'bands'})} >Band Page</button>

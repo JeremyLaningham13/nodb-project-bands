@@ -1,5 +1,5 @@
 .list {
-    margin-left: 37%;
+    margin-left: 35%;
 }
 
 .button3 {
@@ -16,6 +16,7 @@
     outline: none;
     /* margin-left: .%; */
     width: 5%;
+    border-radius: 3px;
 }
 
 .edit1 input::placeholder {
@@ -25,5 +26,5 @@
 }
 
 .bandPageTitle {
-    margin-left: 50px;
+    margin-left: 38px;
 }

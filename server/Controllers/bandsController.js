@@ -12,7 +12,7 @@ let favoriteBands = [
     img: "https://66.media.tumblr.com/98ed15093a7cae7c8874b064f288cafc/tumblr_peydccxflc1rvqdnso3_500.gifv",
     name: "Bilmuri",
     album: "Frame",
-    song: "Timing",
+    song: "Timing, Faint, Wash",
     venue: "J & J's Pizza"
   },
   {
@@ -20,7 +20,7 @@ let favoriteBands = [
     img: "https://thumbs.gfycat.com/HugeDarlingCassowary-size_restricted.gif",
     name: "Story of the Year",
     album: "Wolves",
-    song: "Miracle",
+    song: "Miracle, Until the Day I Die, I'm Alive",
     venue: "Verizon Theater"
   },
   {

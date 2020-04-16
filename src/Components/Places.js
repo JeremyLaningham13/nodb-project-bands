@@ -54,7 +54,7 @@ class Places extends Component {
     console.log(this.state)
     return (
       <div>
-          <nav class='list'>
+          <nav className='list'>
             <img src={this.props.val.img} alt="image" />
             <h2>{this.props.val.name}</h2>
             <p>{this.props.val.album}</p>

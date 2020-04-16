@@ -6,14 +6,13 @@ body {
 
 .bg-image {
   background-image: url("https://edgetulsa.com/wp-content/uploads/2015/07/photodune-3476617-concert-crowd-m.jpg");
+  /* display: flex;
+  justify-content: flex-start; */
   height: 425px;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
   }
-
 
 .bg-text {
   position: absolute;
